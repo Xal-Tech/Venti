@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<title>Comprar</Title>
 <head>
 <?php 
 		include 'inc/link.php';
