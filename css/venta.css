@@ -1,4 +1,42 @@
-#div-producto{
-    width:200px;
-    height:300px;
+#input-productos{
+  width:1030px;
+  height: 300px;  
+  
+}
+
+.dropdown-menu{
+    display: none;}
+
+
+.dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+.dropdown-menu a:hover{
+    background-color: grey;
+    color: white;
+  }
+ .dropdown{
+     width:100px;
+ }
+  .btn.btn-primary.dropdown-toggle{
+    background-color: green;
+    width: 100px;
+    border: 0px;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+        
+}
+#input-imagen{
+    width: 100px;
+}
+
+.info{
+    font-size: 20px;
+}
+
+#titulo{
+    font-size: 40px;
 }
