@@ -6,7 +6,7 @@
 		include 'link.php';
 	?>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Registro</title>
 </head>
 <body>
 	<?php 
