@@ -3,14 +3,14 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<?php 
-		include 'link.php';
+		include '../inc/link.php';
 	?>
 	<meta charset="UTF-8">
 	<title>Document</title>
 </head>
 <body>
 	<?php 
-		include 'navbar.php';
+		include '../inc/navbar.php';
 	 ?>
 	<div class="jumbotron" >
 		<div class="row align-items-center">
