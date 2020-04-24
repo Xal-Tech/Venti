@@ -6,7 +6,7 @@
 		include '../inc/link.php';
 	?>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Mi carrito</title>
 </head>
 <body>
 	<?php 
