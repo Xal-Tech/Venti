@@ -20,6 +20,28 @@
 	</div>
 
 	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-sm-2">
+				
+				</div>
+				<div class="col-lg-4 col-sm-8">
+					<form class="form-row">
+				      	<div class="input-group mb-3">
+						  <input type="text" class="form-control h-auto" placeholder="Buscar">
+						  <div class="input-group-append">
+						    <button class="btn btn-info" type="button" id="button-addon2"><span class="material-icons md-light">search</span></button>
+						  </div>
+						</div>
+				    </form>
+				</div>
+				<div class="col-lg-4 col-sm-2">
+					
+				</div>
+			</div>
+			
+			
+		</div>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-12 col-md-6 col-lg-3 my-2">
