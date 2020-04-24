@@ -13,7 +13,7 @@
 	<?php 
 		include '../inc/navbar.php';
 	 ?>
-	<div class="jumbotron" >
+	<div class="jumbotron"  >
 		<div class="row align-items-center">
 			<span class="col-6 float-left"><center><h1 style="font-family: Pacifico; color: white;">MARQUET</h1></center></span>
 			<span class="col-6"><center><img src="../images/logo-marquet.png" alt="Logo"></center></span>
@@ -39,7 +39,9 @@
 	<label class="info">Precio del producto por medida:</label><br>
 	<input type="text" class="form-control"  name="precio" placeholder="Precio/Medida"><br>
 	<label class="info">Sube la foto del producto</label><br>
-	<input type="file" id="input-imagen" name="imagen" class="buttons">
+	<input type="file" id="input-imagen" name="imagen" class="buttons"><br>
+	<center><button class="btn btn-info" id="ingresar-produ" type="submit" value="ingresar-producto">Ingresar Producto</button></center>
+
 	</div>
 
 

@@ -20,7 +20,7 @@
      width:100px;
  }
   .btn.btn-primary.dropdown-toggle{
-    background-color: green;
+    background-color: #4CAF50;
     width: 100px;
     border: 0px;
     padding: 10px;
@@ -39,4 +39,12 @@
 
 #titulo{
     font-size: 40px;
+}
+#ingresar-produ{
+    margin-top: 20px;
+    background-color: #4CAF50;
+    padding:10px;
+    font-size: 18px;;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
