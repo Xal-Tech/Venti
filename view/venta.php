@@ -6,7 +6,7 @@
 		include '../inc/link.php';
 	?>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Vender</title>
 </head>
 <body>
 	<?php 
@@ -18,5 +18,15 @@
 			<span class="col-6"><center><img src="../images/logo-marquet.png" alt="Logo"></center></span>
 		</div>
 	</div>
+	<div>Ingresar Producto</div>
+	<div id="div-producto">
+	<label>Nombre del producto</label><br>
+	<input type="text" class="form-control"  name="producto" placeholder="Nombre del producto">		
+	
+	
+	</div>
+
+
+
 </body>
 </html>
