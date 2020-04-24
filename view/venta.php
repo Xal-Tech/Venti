@@ -27,11 +27,12 @@
 					<input type="text" class="form-control"  name="producto" placeholder="Nombre del producto">
 				</div>
 				<div class="form-group">
-					<label for="unidad">Tipo de unidad de venta</label>
+					<label for="unidad" class="info">Tipo de unidad de venta</label>
 					<select name="unidad" id="unidad" class="form-control">
 						<option selected>Elegir...</option>
-						<option>KG</option>
+						<option>G</option>
 						<option>Unidad</option>
+						<option>L</option>
 					</select>
 				</div>
 				<div class="form-group">
@@ -43,35 +44,13 @@
 	    			<input type="file" class="form-control-file" id="input-imagen" name="input-imagen">
 				</div>
 				<div class="form-group text-center">
-					<button type="submit" class="btn btn-info">Registrar Producto</button>
+					<button type="submit" class="btn btn-info" >Registrar Producto</button>
 				</div>
 			</form>
 		</div>
 
 		
-		<center><div class="container-fluid" id="titulo">Ingresar Producto</div></center>
-		<div class="container-fluid" id="input-productos">
-		<label class="info">Nombre del producto</label><br>
-		<input type="text" class="form-control"  name="producto" placeholder="Nombre del producto">	<br>
-		<label class="info">Tipo de unidad para venta</label><br>
-		<div class="dropdown">
-		<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" >
-	    Unidad 
-	  </button>
-	  <div class="dropdown-menu">
-	    <a class="dropdown-item" href="#">Kg</a>
-	    <a class="dropdown-item" href="#">g</a>
-		<a class="dropdown-item" href="#">Unidad</a>
-		<a class="dropdown-item" href="#">mL</a>
-		<a class="dropdown-item" href="#">L</a>
-	  	</div>
-		</div><br>
-		<label class="info">Precio del producto por medida:</label><br>
-		<input type="text" class="form-control"  name="precio" placeholder="Precio/Medida"><br>
-		<label class="info">Sube la foto del producto</label><br>
-		<input type="file" id="input-imagen" name="imagen" class="buttons">
-		</div>
-	</div>
+	
 
 	
 
