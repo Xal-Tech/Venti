@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<?php 
 		include '../inc/link.php';
 	?>
@@ -19,7 +18,7 @@
 		</div>
 	</div>
 
-	<div class="container" style="margin-bottom: 80px;">
+	<div class="container">
 		<div class="container">
 			<div class="card text-center mb-3">
 				<div class="row no-gutters">
