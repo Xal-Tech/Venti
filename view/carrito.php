@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
 	<?php 
 		include '../inc/link.php';
 	?>
@@ -18,9 +18,10 @@
 			<span class="col-lg-1 order-1 col-1"><img src="../images/logo-marquet.png" alt="Logo" ></span>
 			<span class="col-lg-1 col-3"><a href="carrito.php"><img src="../images/shopping-cart.png" alt="cart" ></a></span>
 		</div>
-	<div>
-	
-	
 	</div>
+
+	<center><div>
+	Tus pedidos
+	</div></center>
 </body>
 </html>
