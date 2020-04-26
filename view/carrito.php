@@ -13,13 +13,13 @@
 		include '../inc/navbar.php';
 	 ?>
 	<div class="jumbotron" >
-		<div class="row">
-			<span class="col-sm-2 float-left"><center><h1 style="font-family: Pacifico; color: white;">MARQUET</h1></center></span>
-			<span class="col-sm-2 order-1"><img src="../images/logo-marquet.png" alt="Logo"></span>
-			<span class="col-sm-2"><a><img src="../images/shopping-cart.png" alt="cart"></span>
+		<div class="row align-items-center ">
+			<span class="col-lg-10 col-6"><h1 style="font-family: Pacifico; color: white;">MARQUET</h1></span>
+			<span class="col-lg-1 order-1 col-1"><img src="../images/logo-marquet.png" alt="Logo" ></span>
+			<span class="col-lg-1 col-3"><img src="../images/shopping-cart.png" alt="cart" ></span>
 		</div>
 	<div>
-	Tus pedidos<br>
+	
 	
 	</div>
 </body>
