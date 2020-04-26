@@ -11,14 +11,8 @@
 <body>
 	<?php 
 		include '../inc/navbar.php';
+		include '../inc/jumbutron.php';
 	 ?>
-	<div class="jumbotron" >
-		<div class="row align-items-center">
-		<span class="col-lg-10 col-6"><h1 style="font-family: Pacifico; color: white;">MARQUET</h1></span>
-			<span class="col-lg-1 order-1 col-1"><img src="../images/logo-marquet.png" alt="Logo" ></span>
-			<span class="col-lg-1 col-3"><a href="carrito.php"><img src="../images/shopping-cart.png" alt="cart" ></a></span>
-		</div>
-	</div>
 	<div class="container" style="margin-bottom: 80px;">
 	 	<div class="card" style="margin-bottom: 40px;">
 	 		<div class="card-title">
