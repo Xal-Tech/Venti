@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>f3e9183d-8055-4b38-bb5e-2908861902eb.SCHEMA:venti</OriginalElement>
+  <nodes>
+    <node x="106.80952380952377" y="202.50000000000006">f3e9183d-8055-4b38-bb5e-2908861902eb.TABLE:venti.rol</node>
+    <node x="578.5" y="-23.611111111111143">f3e9183d-8055-4b38-bb5e-2908861902eb.TABLE:venti.producto_comprador</node>
+    <node x="-133.95833333333326" y="63.125">f3e9183d-8055-4b38-bb5e-2908861902eb.TABLE:venti.privilegio</node>
+    <node x="597.5" y="260.38888888888886">f3e9183d-8055-4b38-bb5e-2908861902eb.TABLE:venti.producto</node>
+    <node x="350.5" y="-1.6111111111111427">f3e9183d-8055-4b38-bb5e-2908861902eb.TABLE:venti.usuario</node>
+    <node x="114.83333333333331" y="42.5">f3e9183d-8055-4b38-bb5e-2908861902eb.TABLE:venti.usuario_rol</node>
+    <node x="354.5" y="281.38888888888886">f3e9183d-8055-4b38-bb5e-2908861902eb.TABLE:venti.vandedor_producto</node>
+    <node x="-126.83333333333326" y="203.95833333333331">f3e9183d-8055-4b38-bb5e-2908861902eb.TABLE:venti.privilegio_rol</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="f3e9183d-8055-4b38-bb5e-2908861902eb.TABLE:venti.vandedor_producto" target="f3e9183d-8055-4b38-bb5e-2908861902eb.TABLE:venti.usuario">
+      <point x="0.0" y="-37.5" />
+      <point x="0.0" y="80.5" />
+    </edge>
+    <edge source="f3e9183d-8055-4b38-bb5e-2908861902eb.TABLE:venti.producto_comprador" target="f3e9183d-8055-4b38-bb5e-2908861902eb.TABLE:venti.usuario">
+      <point x="-91.5" y="-0.0" />
+      <point x="79.5" y="-0.0" />
+    </edge>
+    <edge source="f3e9183d-8055-4b38-bb5e-2908861902eb.TABLE:venti.usuario_rol" target="f3e9183d-8055-4b38-bb5e-2908861902eb.TABLE:venti.rol">
+      <point x="0.0" y="37.5" />
+      <point x="0.0" y="-47.5" />
+    </edge>
+    <edge source="f3e9183d-8055-4b38-bb5e-2908861902eb.TABLE:venti.usuario_rol" target="f3e9183d-8055-4b38-bb5e-2908861902eb.TABLE:venti.usuario">
+      <point x="61.0" y="-0.0" />
+      <point x="-79.5" y="-0.0" />
+    </edge>
+    <edge source="f3e9183d-8055-4b38-bb5e-2908861902eb.TABLE:venti.vandedor_producto" target="f3e9183d-8055-4b38-bb5e-2908861902eb.TABLE:venti.producto">
+      <point x="75.5" y="-0.0" />
+      <point x="-72.5" y="-0.0" />
+    </edge>
+    <edge source="f3e9183d-8055-4b38-bb5e-2908861902eb.TABLE:venti.privilegio_rol" target="f3e9183d-8055-4b38-bb5e-2908861902eb.TABLE:venti.rol">
+      <point x="-66.0" y="-0.0" />
+      <point x="69.5" y="-0.0" />
+    </edge>
+    <edge source="f3e9183d-8055-4b38-bb5e-2908861902eb.TABLE:venti.producto_comprador" target="f3e9183d-8055-4b38-bb5e-2908861902eb.TABLE:venti.producto">
+      <point x="0.0" y="102.5" />
+      <point x="0.0" y="-58.5" />
+    </edge>
+    <edge source="f3e9183d-8055-4b38-bb5e-2908861902eb.TABLE:venti.privilegio_rol" target="f3e9183d-8055-4b38-bb5e-2908861902eb.TABLE:venti.privilegio">
+      <point x="0.0" y="-37.5" />
+      <point x="0.0" y="47.5" />
+    </edge>
+  </edges>
+  <settings layout="Directed Orthogonal" zoom="0.6999999999999996" x="437.73325285825297" y="75.55555555555577" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
