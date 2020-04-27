@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 26, 2020 at 03:33 AM
+-- Generation Time: Apr 27, 2020 at 03:21 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -23,6 +23,20 @@ SET time_zone = "+00:00";
 --
 CREATE DATABASE IF NOT EXISTS `venti` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE `venti`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pedido`
+--
+
+CREATE TABLE `pedido` (
+  `idPedido` int(11) NOT NULL,
+  `idUsuario` int(11) NOT NULL,
+  `fechaPedido` datetime NOT NULL DEFAULT current_timestamp(),
+  `estatusEntraga` varchar(127) NOT NULL,
+  `fechaEntrega` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -61,17 +75,25 @@ CREATE TABLE `producto` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `producto_comprador`
+-- Table structure for table `producto_pedido`
 --
 
-CREATE TABLE `producto_comprador` (
+CREATE TABLE `producto_pedido` (
+  `idProducto` int(11) NOT NULL,
+  `idPedido` int(11) NOT NULL,
+  `cantidad` varchar(127) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `reviews`
+--
+
+CREATE TABLE `reviews` (
   `idProducto` int(11) NOT NULL,
   `idUsuario` int(11) NOT NULL,
-  `fechaPedido` datetime NOT NULL DEFAULT current_timestamp(),
-  `cantidad` varchar(127) NOT NULL,
-  `estatusEntraga` varchar(127) NOT NULL,
-  `review` tinyint(4) NOT NULL,
-  `fechaEntrega` datetime NOT NULL
+  `review` tinyint(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -126,6 +148,13 @@ CREATE TABLE `vandedor_producto` (
 --
 
 --
+-- Indexes for table `pedido`
+--
+ALTER TABLE `pedido`
+  ADD PRIMARY KEY (`idPedido`),
+  ADD UNIQUE KEY `idUsuario` (`idUsuario`);
+
+--
 -- Indexes for table `privilegio`
 --
 ALTER TABLE `privilegio`
@@ -146,10 +175,17 @@ ALTER TABLE `producto`
   ADD UNIQUE KEY `id` (`id`);
 
 --
--- Indexes for table `producto_comprador`
+-- Indexes for table `producto_pedido`
 --
-ALTER TABLE `producto_comprador`
-  ADD PRIMARY KEY (`idProducto`,`idUsuario`,`fechaPedido`),
+ALTER TABLE `producto_pedido`
+  ADD PRIMARY KEY (`idProducto`,`idPedido`),
+  ADD KEY `idPedido` (`idPedido`);
+
+--
+-- Indexes for table `reviews`
+--
+ALTER TABLE `reviews`
+  ADD PRIMARY KEY (`idProducto`,`idUsuario`),
   ADD KEY `idUsuario` (`idUsuario`);
 
 --
@@ -185,6 +221,12 @@ ALTER TABLE `vandedor_producto`
 --
 
 --
+-- AUTO_INCREMENT for table `pedido`
+--
+ALTER TABLE `pedido`
+  MODIFY `idPedido` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `producto`
 --
 ALTER TABLE `producto`
@@ -207,6 +249,12 @@ ALTER TABLE `usuario`
 --
 
 --
+-- Constraints for table `pedido`
+--
+ALTER TABLE `pedido`
+  ADD CONSTRAINT `pedido_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuario` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
 -- Constraints for table `privilegio_rol`
 --
 ALTER TABLE `privilegio_rol`
@@ -214,11 +262,18 @@ ALTER TABLE `privilegio_rol`
   ADD CONSTRAINT `privilegio_rol_ibfk_2` FOREIGN KEY (`idRol`) REFERENCES `rol` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `producto_comprador`
+-- Constraints for table `producto_pedido`
 --
-ALTER TABLE `producto_comprador`
-  ADD CONSTRAINT `producto_comprador_ibfk_1` FOREIGN KEY (`idProducto`) REFERENCES `producto` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `producto_comprador_ibfk_2` FOREIGN KEY (`idUsuario`) REFERENCES `usuario` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE `producto_pedido`
+  ADD CONSTRAINT `producto_pedido_ibfk_1` FOREIGN KEY (`idProducto`) REFERENCES `producto` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `producto_pedido_ibfk_2` FOREIGN KEY (`idPedido`) REFERENCES `pedido` (`idPedido`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `reviews`
+--
+ALTER TABLE `reviews`
+  ADD CONSTRAINT `reviews_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuario` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `reviews_ibfk_2` FOREIGN KEY (`idProducto`) REFERENCES `producto` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `usuario_rol`
