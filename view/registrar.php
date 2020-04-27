@@ -12,6 +12,7 @@
 	<?php 
 		include '../inc/navbar.php';
 		include '../inc/jumbutron.php';
+		include '../inc/carrito.php'
 	 ?>
 	<div class="container" style="margin-bottom: 80px;">
 	 	<div class="card" style="margin-bottom: 40px;">

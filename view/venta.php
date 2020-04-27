@@ -13,6 +13,7 @@
 	<?php 
 		include '../inc/navbar.php';
 		include '../inc/jumbutron.php';
+		include '../inc/carrito.php'
 	 ?>
 	<div class="container-fluid">
 		<div class="container">

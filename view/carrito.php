@@ -13,7 +13,6 @@
 		include '../inc/navbar.php';
 		include '../inc/jumbutron.php'
 	 ?>
-	
 
 	<center><div>
 	Tus pedidos
