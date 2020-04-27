@@ -27,7 +27,7 @@
         <a class="nav-link" href="miEmpresa.php">Mi cuenta <span class="material-icons md-light btn">person</span></a>
       </div> 
       <div class="nav-item col">
-        <a class="nav-link" href="comprar.php">Catalogo <span class="material-icons md-light btn">store</span></a>
+        <a class="nav-link" href="catalogo.php">Catalogo <span class="material-icons md-light btn">store</span></a>
       </div> 
       <div class="nav-item col">
         <a class="nav-link" href="venta.php">Vender <span class="material-icons md-light btn">local_atm</span></a>
