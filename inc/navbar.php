@@ -16,7 +16,7 @@
   </div>
   <div class="col pad0">
     <center>
-      <a class="nav-link" href="#"><span class="material-icons md-light">search</span></a>
+      <a class="nav-link" href="#"><span class="material-icons md-light">info</span></a>
     </center>
   </div>
 </div>
@@ -33,7 +33,7 @@
         <a class="nav-link" href="venta.php">Vender <span class="material-icons md-light btn">local_atm</span></a>
       </div> 
       <div class="nav-item col">
-        <a class="nav-link" href="#">Buscar <span class="material-icons md-light btn">search</span></a>
+        <a class="nav-link" href="#">Info <span class="material-icons md-light btn">info</span></a>
       </div> 
     </div>
 </nav>
