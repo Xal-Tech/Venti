@@ -43,8 +43,18 @@
 			  </div>
 			</div>
 
-			<div class="col">
-				<span class="text-center"><a class="btn btn-info" href="#">VER MAPA</a></span>
+			<div class="col" style="background-color: gray;">
+				<div class="row">
+					<div class="col-4">
+						<span class="text-center"><a class="btn btn-info" href="#">VER MAPA</a></span>
+					</div>
+					<div class="col-4">
+						<span class="text-center"><a class="btn btn-info" href="#">ACEPTAR PEDIDO</a></span>
+					</div>
+					<div class="col-4">
+						<span class="text-center"><a class="btn btn-danger" href="#">NEGAR PEDIDO</a></span>
+					</div>
+				</div>
 			</div>
 	 	</div>
 	 </div>
