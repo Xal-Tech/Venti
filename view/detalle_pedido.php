@@ -43,8 +43,8 @@
 			  </div>
 			</div>
 
-			<div class="col" style="background-color: gray;">
-				<div class="row">
+			<div class="col" style="border: 1px solid black">
+				<div class="row align-items-center">
 					<div class="col-4">
 						<span class="text-center"><a class="btn btn-info" href="#">VER MAPA</a></span>
 					</div>
