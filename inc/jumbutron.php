@@ -1,7 +1,7 @@
 <div class="jumbotron" >
 	<div class="row no-gutters text-center align-items-center">
 		<div class="col-8 col-md-8">
-			<span style="font-family: Pacifico; color: white; font-size: 6vw; float: left;">MARQUET</span>
+			<span style="font-family: Pacifico; color: white; font-size: 6vw; float: left;">Mexi-Marquet</span>
 		</div>
 		<div class="col-2 col-md-2">
 		</div>
