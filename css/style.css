@@ -3,12 +3,12 @@
   font-style: normal;
   font-weight: 400;
   src: local('Pacifico Regular'), local('Pacifico-Regular'),
-       url('../fonts/pacifico-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/pacifico-v16-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../fonts/Montserrat/pacifico-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/Montserrat/pacifico-v16-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 @font-face{
   font-family: "Pacifico";
-  src: url('../fonts/pacifico-v16-latin-regular.woff');
+  src: url('../fonts/Montserrat/pacifico-v16-latin-regular.woff');
 }
 
 
@@ -21,6 +21,7 @@
 
   body{
     background-color: #f2faee;
+    margin-bottom: 80px;
   }
 
   .jumbotron {
@@ -130,8 +131,6 @@ footer .copyright span {
 .btn-info{
   background-color: #4CAF50;
   border:0px ;
-  padding:10px;
-  width:120px;
 
 }
 .btn-info:hover{

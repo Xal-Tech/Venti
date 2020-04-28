@@ -1,0 +1,20 @@
+#input-productos{
+  width:1030px;
+  height: 300px;  
+  
+}
+
+.info{
+    font-size: 20px;
+}
+
+#titulo{
+    font-size: 40px;
+}
+#ingresar-produ{
+    margin-top: 20px;
+    background-color: #4CAF50;
+    padding:10px;
+   
+
+}
