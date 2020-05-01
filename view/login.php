@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 include_once("../inc/util.php");
@@ -9,6 +10,7 @@ if(isset($_POST["username"], $_POST["password"])){
 }
 
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -43,6 +45,7 @@ if(isset($_POST["username"], $_POST["password"])){
     <?php if(!isset($_SESSION["numero"])): ?>
     <div class="container-fluid">
     <form  action="login.php" method="POST">
+
 	 			<div class="form-group">
 	 				<input type="text" class="form-control" name="username" placeholder="Telefono celular">
 	 			</div>

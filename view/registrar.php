@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
 	<?php 
 		include '../inc/link.php';
 	?>
@@ -10,9 +10,9 @@
 </head>
 <body>
 	<?php 
-		include '../inc/navbar.php';
+		
 		include '../inc/jumbutron.php';
-		include '../inc/carrito.php'
+		include '../inc/carrito.php';
 	 ?>
 	<div class="container" style="margin-bottom: 80px;">
 	 	<div class="card" style="margin-bottom: 40px;">
@@ -42,6 +42,11 @@
 	            <button class="btn btn-info" type="submit" value="Crear cuenta">Crear cuenta</button>
         	</form>
 	 	</div>
+	 </div>
+	 <div class="registro container-fluid fixed-bottom">
+	<center> <p class="tienes-cuenta">
+            Ya tienes cuenta? <a href="login.php" id="iniciar-sesion-boton">Iniciar sesi&oacute;n</a>
+        </p></center>
 	 </div>
 </body>
 </html>
