@@ -35,7 +35,7 @@ if(isset($_POST["username"], $_POST["password"])){
                     <br>
                     <h5><a href="../inc/logout.php">Cerrar sesion </a></h5>
                 <?php else: ?>
-                    <strong><h2>Inicia Sesíon</h2></strong>
+                    <strong><h2>Inicia sesi&oacute;n</h2></strong>
                     <br>
                     <h5>Es rápido y sencillo</h5>
                 <?php endif; ?>
@@ -47,16 +47,16 @@ if(isset($_POST["username"], $_POST["password"])){
     <form  action="login.php" method="POST">
 
 	 			<div class="form-group">
-	 				<input type="text" class="form-control" name="username" placeholder="Telefono celular">
+	 				<input type="text" class="form-control" name="username" placeholder="Tel&eacute;fono celular">
 	 			</div>
 	 			<div class="form-group">
                  <input type="password" class="form-control" name="password" placeholder="Contraseña">
                  </div>
-                <button class="btn btn-info" type="submit" value="Iniciar sesion">Iniciar sesíon </button>
+                <button class="btn btn-info" type="submit" value="Iniciar sesion">Iniciar sesi&oacute;n </button>
     </div>
     <div class="registro container-fluid fixed-bottom">
         <center> <p class="tienes-cuenta">
-            No tienes cuenta? <a href="registrar.php" id="iniciar-sesion-boton">Crear cuenta</a>
+            ¿No tienes cuenta? <a href="registrar.php" id="iniciar-sesion-boton">Crear cuenta</a>
         </p></center>
 	 </div>
     <?php endif; ?>
