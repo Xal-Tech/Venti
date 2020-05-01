@@ -1,4 +1,14 @@
-<?php include_once("../inc/util.php")?>
+<?php
+session_start();
+include_once("../inc/util.php");
+
+if(isset($_POST["username"], $_POST["password"])){
+    $_POST["username"] = limpia_entrada($_POST["username"]);
+    $_POST["password"] = limpia_entrada($_POST["password"]);
+    autenticar($_POST["username"], $_POST["password"]);
+}
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -24,7 +34,7 @@
              </div>
 </div>
     <div class="container-fluid">
-    <form  action="login/create-account.php" method="POST">
+    <form  action="login.php" method="POST">
 	 			<div class="form-group">
 	 				<input type="text" class="form-control" name="username" placeholder="Telefono celular">
 	 			</div>

@@ -41,7 +41,7 @@
     //asigna los privilegios del usuario a la sesión
     function setPermisos($numero){
         $sql = "
-            SELECT  u.nombre as nom, p.nombre as priv
+            SELECT  u.nombre as nom, u.numero_tel as num, p.nombre as priv
             FROM usuario u, usuario_rol ur, rol r, privilegio_rol pr, privilegio p
             WHERE u.numero_tel='$numero'
               AND u.id=ur.usuario_id
@@ -55,7 +55,7 @@
             //asigna permisos
             $_SESSION['privilegios'][$row["priv"]] = 1;
             $_SESSION["nombre"] = $row["nom"];
-            $_SESSION["numero"] = $row["nom"];
+            $_SESSION["numero"] = $row["num"];
         }
     }
 
