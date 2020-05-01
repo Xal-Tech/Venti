@@ -27,12 +27,20 @@ if(isset($_POST["username"], $_POST["password"])){
 	 	<div class="card" style="margin-bottom: 40px;">
 	 		<div class="card-title">
 	 			<center>
-	 			<strong><h2>Inicia Sesíon</h2></strong>
-	 			<br>
-	 			<h5>Es rápido y sencillo</h5>
+
+                <?php if(isset($_SESSION["nombre"])): ?>
+                    <strong><h2>Bienvenido <?= $_SESSION["nombre"] ?></h2></strong>
+                    <br>
+                    <h5><a href="../inc/logout.php">Cerrar sesion </a></h5>
+                <?php else: ?>
+                    <strong><h2>Inicia Sesíon</h2></strong>
+                    <br>
+                    <h5>Es rápido y sencillo</h5>
+                <?php endif; ?>
 	 			</center>
              </div>
 </div>
+    <?php if(!isset($_SESSION["numero"])): ?>
     <div class="container-fluid">
     <form  action="login.php" method="POST">
 	 			<div class="form-group">
@@ -42,11 +50,12 @@ if(isset($_POST["username"], $_POST["password"])){
                  <input type="password" class="form-control" name="password" placeholder="Contraseña">
                  </div>
                 <button class="btn btn-info" type="submit" value="Iniciar sesion">Iniciar sesíon </button>
-</div>
-<div class="registro container-fluid fixed-bottom">
-	<center> <p class="tienes-cuenta">
+    </div>
+    <div class="registro container-fluid fixed-bottom">
+        <center> <p class="tienes-cuenta">
             No tienes cuenta? <a href="registrar.php" id="iniciar-sesion-boton">Crear cuenta</a>
         </p></center>
 	 </div>
+    <?php endif; ?>
 </body>
 </html>
